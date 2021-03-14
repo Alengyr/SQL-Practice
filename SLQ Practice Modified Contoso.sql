@@ -59,5 +59,12 @@ SELECT loaddate,updatedate FROM customer;
 
 --Dropped the test append tables for loaddate and updatedate.
 
---Modify the EmployeeKey field to have brand new ID. The ID starts from 30-xx (Should a loop be used for this?)
+--(TODO) Modify the EmployeeKey field in Technician table to have brand new ID. The ID starts from 30-xx (Should a loop be used for this?)
 
+/* Scenario:
+
+Department produces a daily CSV file containing transactions. 
+Since salesdept has a master table that holds all these records, 
+need a reusable script that detects csv files from a folder.
+Then it will append results from each csv file into the master table.
+*/
